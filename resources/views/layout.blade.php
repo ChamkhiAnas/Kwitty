@@ -19,10 +19,12 @@ Released   : 20140225
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="/fonts.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
 
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+@yield('head')
+
 
 </head>
 <div id="header-wrapper">
