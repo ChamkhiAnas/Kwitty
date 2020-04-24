@@ -36,6 +36,13 @@ class ArticlesController extends Controller
 
         // dump(request()->all());
 
+
+        request()->validate([
+            'title'=>['required','min:3','max:255'],
+            'excerpt'=>'required',
+            'body'=>'required',
+        ]);
+
         $article=new Article();
         $article->title=request('title');
         $article->excerpt=request('excerpt');

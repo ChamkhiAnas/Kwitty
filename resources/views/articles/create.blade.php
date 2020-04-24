@@ -17,7 +17,10 @@
                 <label class="label" for="title">Title</label>
 
                 <div class="control">
-                    <input class="input" type="text"  name="title" id="title">
+                <input class="input {{ $errors->has('title') ? 'is-danger' : ''}}" type="text"  name="title" id="title">
+                @if ($errors->has('title'))
+                <p class="help is-danger">{{$errors->first('title')}}</p>
+                @endif
                 </div>
             </div>
 
